@@ -18,72 +18,72 @@
 |                                              | > y las **explicaciones y capturas de pantalla** que consideréis **necesarias**. |
 |                                              |                                                              |
 |                                              | ## Commit inicial                                            |
-|                                              |                                                              |
+|                                              | git init                                                     |
 |                                              | 1. Añadir al README.md los comanddos utilizados hasta ahora  |
 |                                              | y hacer un coomit inicial con el mensaje **commit inicial**. |
-|                                              |                                                              |
+|                                              | git add README.md // git commit -m "commit inicial"//git branch -M main// |
 |                                              | ## Push inicial                                              |
 |                                              |                                                              |
 |                                              | 1. Subir los cambios al repositorio remoto.                  |
-|                                              |                                                              |
+|                                              | git remote add origin https://github.com/AlfonsoAlcaraz/masteruah.git //git push -u origin main |
 |                                              | ## Añadir fichero 1.txt                                      |
 |                                              |                                                              |
 |                                              | 1. Añadir fichero **1.txt** al repositorio local.            |
-|                                              |                                                              |
+|                                              | echo "# masteruah" >> 1.txt // git add . //git commit -m "commit 1.txt" |
 |                                              | ## Crear el tag v0.1                                         |
 |                                              |                                                              |
 |                                              | 1. Crear un tag **v0.1**.                                    |
-|                                              |                                                              |
+|                                              | git tag v0.1 main                                            |
 |                                              | ## Subir el tag v0.1                                         |
 |                                              |                                                              |
 |                                              | 1. Subir los cambios al repositorio remoto.                  |
-|                                              |                                                              |
+|                                              | git commit -m "commit v0.1"                                  |
 |                                              | ## Crear una rama v0.2                                       |
 |                                              |                                                              |
 |                                              | 1. Crear una rama **v0.2**.                                  |
-|                                              |                                                              |
+|                                              | git checkout -b v0.2                                         |
 |                                              | 1. Posiciona tu carpeta de trabajo en esta rama.             |
-|                                              |                                                              |
+|                                              | git checkout v0.2                                            |
 |                                              | ## Añadir fichero 1.txt                                      |
 |                                              |                                                              |
 |                                              | 1. Añadir un fichero **2.txt** en la rama **v0.2**.          |
-|                                              |                                                              |
+|                                              | git add .                                                    |
 |                                              | ## Crear rama remota v0.2                                    |
 |                                              |                                                              |
 |                                              | 1. Subir los cambios al reposiorio remoto.                   |
-|                                              |                                                              |
+|                                              | git commit -m "commit 2.txt" // git push                     |
 |                                              | ## Merge directo                                             |
 |                                              |                                                              |
 |                                              | 1. Posicionarse en la rama **master**.                       |
-|                                              |                                                              |
+|                                              | git checkout main                                            |
 |                                              | 1. Hacer un merge de la rama **v0.2** en la rama **master**. |
-|                                              |                                                              |
+|                                              | git merge v0.2                                               |
 |                                              | ## Merge con conflicto                                       |
 |                                              |                                                              |
 |                                              | 1. En la rama **master** poner **Hola** en el fichero **1.txt** y hacer commit. |
-|                                              |                                                              |
+|                                              | git add. // git commit -m "commit hola"                      |
 |                                              | 1. Posicionarse en la rama **v0.2** y poner **Adios** en el fichero "1.txt" y hacer commit. |
-|                                              |                                                              |
+|                                              | git checkout v0.2//git add . // git commit -m "commit adios" |
 |                                              | 1. Posicionarse de nuevo en la rama **master** y hacer un merge con la rama **v0.2** |
+|                                              | git checkout main //git merge v0.2                           |
 |                                              |                                                              |
-|                                              | ## Listado de ramas                                          |
 |                                              |                                                              |
 |                                              | 1. Listar las ramas con merge y las ramas sin merge.         |
-|                                              |                                                              |
+|                                              | git diff main v0.2                                           |
 |                                              | ## Arreglar conflicto                                        |
 |                                              |                                                              |
 |                                              | 1. Arreglar el conflicto anterior y hacer un commit.         |
-|                                              |                                                              |
+|                                              | git add . //git commit -m "commit arreglo"                   |
 |                                              | ## Borrar rama                                               |
 |                                              |                                                              |
 |                                              | 1. Crear un tag **v0.2**                                     |
-|                                              |                                                              |
+|                                              | git tag v0.2 main                                            |
 |                                              | 1. Borrar la rama **v0.2**                                   |
-|                                              |                                                              |
+|                                              | git brach -d v0.2                                            |
 |                                              | ## Listado de cambios                                        |
 |                                              |                                                              |
 |                                              | 1. Listar los distintos commits con sus ramas y sus tags.    |
-|                                              |                                                              |
+|                                              | git log                                                      |
 |                                              | ## Cuenta de GitHub                                          |
 |                                              |                                                              |
 |                                              | 1. Poner una foto en vuestro perfil de GitHub.               |
@@ -105,7 +105,7 @@
 |                                              |                                                              |
 |                                              | \|        NOMBRE          \|                     GITHUB                        \| |
 |                                              | \|------------------------\|---------------------------------------------------\| |
-|                                              | \| Nombre del compañero 1 \| [enlace a github 1](http://github.com/i12vecaj) \| |
+|                                              | \|Franxer \| https://github.com/Franxer\|                    |
 |                                              | \| Nombre del compañero 2 \| [enlace a github 1](http://github.com/i12vecaj) \| |
 |                                              | \| Nombre del compañero 3 \| [enlace a github 3](http://github.com/i12vecaj) \| |
 |                                              |                                                              |
